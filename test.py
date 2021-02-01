@@ -105,3 +105,11 @@ print(top_right)
 print(bottom_left)
 print(bottom_right)
 plt.show()
+
+
+# Needs to be done:
+# https://stackoverflow.com/questions/22797512/rectangles-dimensions-given-only-the-top-left-and-bottom-right-coordinates-an
+# Credits:
+# https://tonyzhangnd.github.io/2017/07/Mitosis-Image-Processing-1.html
+# https://docs.opencv.org/master/d4/dc6/tutorial_py_template_matching.html
+# https://www.pyimagesearch.com/2015/01/26/multi-scale-template-matching-using-python-opencv/

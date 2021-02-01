@@ -2,9 +2,10 @@ from __future__ import print_function
 import cv2 as cv
 import numpy as np
 from matplotlib import pyplot as plt
-from scipy import misc, ndimage
+from scipy import ndimage
 import os
 
+# Directories / Image names
 
 IMG_DIR = 'originals'
 TMPL_DIR = 'templates2'
@@ -20,7 +21,6 @@ gray_img = cv.imread(os.path.join(IMG_DIR, IMGN), cv.IMREAD_GRAYSCALE)
 template = cv.imread(os.path.join(IMG_DIR, TMPN), 0)
 w, h = template.shape[::-1]
 
-# All the 6 methods for comparison in a list
 
 min_val = 1.23E+10
 max_val = 1.23E+10
@@ -61,7 +61,7 @@ def make_masks():
             cv.imwrite(os.path.join(MASK_DIR, 'mask%d.png' % deg), mask)
     return
 
-
+# Function calls for making templates and masks (needs to be called only once)
 # make_templates()
 # make_masks()
 
